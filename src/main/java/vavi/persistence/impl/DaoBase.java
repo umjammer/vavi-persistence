@@ -14,7 +14,7 @@ import vavi.persistence.Entity;
 
 /**
  * DaoBase.
- * <li> TODO Dao ‚Æ“‡‚µ‚Ä‚à‚¢‚¢‚¯‚Ç {@link #getEntityClass()} ‚ğ protected ‚É‚µ‚½‚¢‚ª‚½‚ß...
+ * <li> TODO Dao ã¨çµ±åˆã—ã¦ã‚‚ã„ã„ã‘ã© {@link #getEntityClass()} ã‚’ protected ã«ã—ãŸã„ãŒãŸã‚...
  * @author <a href="mailto:vavivavi@yahoo.co.jp">Naohide Sano</a> (nsano)
  * @version 0.00 070206 nsano initial version <br>
  */

@@ -14,10 +14,10 @@ import javax.persistence.EntityManager;
 
 
 /**
- * DAO‚ğ•\‚·ƒCƒ“ƒ^[ƒtƒF[ƒXB
+ * DAOã‚’è¡¨ã™ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹ã€‚
  * 
- * @param <E> ƒGƒ“ƒeƒBƒeƒB‚ÌŒ^
- * @param <I> ƒGƒ“ƒeƒBƒeƒB‚ÌIDƒtƒB[ƒ‹ƒh‚ÌŒ^
+ * @param <E> ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã®å‹
+ * @param <I> ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã®IDãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å‹
  * 
  * @author <a href="mailto:vavivavi@yahoo.co.jp">Naohide Sano</a> (nsano)
  * @version 0.00 070206 nsano initial version <br>

@@ -13,10 +13,10 @@ import vavi.persistence.Entity;
 
 
 /**
- * ƒGƒ“ƒeƒBƒeƒB‚ğ•\‚·Šî’êƒNƒ‰ƒXB
- * {@link Dao} ‚Åˆµ‚¤ƒGƒ“ƒeƒBƒeƒB‚ğ•\‚·Šî’êƒNƒ‰ƒX‚Å‚·B
+ * ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã‚’è¡¨ã™åŸºåº•ã‚¯ãƒ©ã‚¹ã€‚
+ * {@link Dao} ã§æ‰±ã†ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã‚’è¡¨ã™åŸºåº•ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
  *
- * @param <I> IDƒtƒB[ƒ‹ƒh‚ÌŒ^
+ * @param <I> IDãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å‹
  *
  * @author <a href="mailto:vavivavi@yahoo.co.jp">Naohide Sano</a> (nsano)
  * @version 0.00 070206 nsano initial version <br>

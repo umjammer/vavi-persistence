@@ -10,10 +10,10 @@ import java.io.Serializable;
 
 
 /**
- * ƒGƒ“ƒeƒBƒeƒB‚ğ•\‚·ƒCƒ“ƒ^[ƒtƒF[ƒXB
- * {@link Dao} ‚Åˆµ‚¤ƒGƒ“ƒeƒBƒeƒB‚ğ•\‚·ƒCƒ“ƒ^[ƒtƒF[ƒX‚Å‚·B
+ * ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã‚’è¡¨ã™ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹ã€‚
+ * {@link Dao} ã§æ‰±ã†ã‚¨ãƒ³ãƒ†ã‚£ãƒ†ã‚£ã‚’è¡¨ã™ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹ã§ã™ã€‚
  *
- * @param <I> IDƒtƒB[ƒ‹ƒh‚ÌŒ^
+ * @param <I> IDãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã®å‹
  *
  * @author <a href="mailto:vavivavi@yahoo.co.jp">Naohide Sano</a> (nsano)
  * @version 0.00 070206 nsano initial version <br>
