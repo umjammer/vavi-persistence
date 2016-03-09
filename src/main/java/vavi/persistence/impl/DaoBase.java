@@ -29,7 +29,7 @@ public abstract class DaoBase<E extends Entity<I>, I extends Serializable>
         try {
             return getEntityClass().newInstance();
         } catch (Exception e) {
-            throw (RuntimeException) new IllegalStateException().initCause(e);
+            throw new IllegalStateException(e);
         }
     }
 }

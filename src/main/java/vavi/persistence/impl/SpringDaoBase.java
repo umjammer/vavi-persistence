@@ -133,37 +133,31 @@ public abstract class SpringDaoBase<E extends Entity<I>, I extends Serializable>
     }
 
     /* */
-    @SuppressWarnings("unchecked")
     public List<E> find(String queryString) {
         return jpaTemplate.find(queryString);
     }
 
     /* */
-    @SuppressWarnings("unchecked")
     public List<E> find(String queryString, Object ... params) {
         return jpaTemplate.find(queryString, params);
     }
 
     /* */
-    @SuppressWarnings("unchecked")
     public List<E> findByNamedParams(String queryString, Map<String, ? extends Object> params) {
         return jpaTemplate.findByNamedParams(queryString, params);
     }
 
     /* */
-    @SuppressWarnings("unchecked")
     public List<E> findByNamedQuery(String queryName) {
         return jpaTemplate.findByNamedQuery(queryName);
     }
 
     /* */
-    @SuppressWarnings("unchecked")
     public List<E> findByNamedQuery(String queryName, Object ... params) {
         return jpaTemplate.findByNamedQuery(queryName, params);
     }
 
     /* */
-    @SuppressWarnings("unchecked")
     public List<E> findByNamedQueryAndNamedParams(String queryName, Map<String, ? extends Object> params) {
         return jpaTemplate.findByNamedQueryAndNamedParams(queryName, params);
     }
