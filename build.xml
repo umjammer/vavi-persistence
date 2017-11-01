@@ -7,47 +7,39 @@
 <!--                                                                        -->
 <!-- vavi-persistence                                                       -->
 <!--                                                                        -->
-<!-- @author	Naohide Sano                                                -->
-<!-- @version	0.00	021208	nsano	initial version                     -->
+<!-- @author Naohide Sano                                                   -->
+<!-- @version 0.00 021208 nsano initial version                             -->
 <!--                                                                        -->
 <!-- ////////////////////////////////////////////////////////////////////// -->
 
-<project name="vavi-persistence" default="compile" basedir="."
-         xmlns:ivy="antlib:org.apache.ivy.ant">
+<project name="vavi-persistence" default="" basedir="."
+  xmlns:artifact="urn:maven-artifact-ant">
 
-  <property file="local.properties" />
-  <property name="dir.build" value="build" />
-
-  <!-- クラスパスの定義 -->
-  <path id="project.class.path">
-    <pathelement location="${dir.build}" />
-    <fileset dir="lib">
+  <path id="maven-ant-tasks.classpath">
+    <fileset dir="${user.home}/lib/java/maven-ant-tasks">
       <include name="*.jar" />
     </fileset>
   </path>
+  <typedef resource="org/apache/maven/artifact/ant/antlib.xml"
+           uri="urn:maven-artifact-ant"
+           classpathref="maven-ant-tasks.classpath" />
 
-  <!-- ターゲットの定義 -->
+  <property environment="env" />
+  <property file="local.properties" />
 
-  <!-- clean -->
-  <target name="clean" description="ビルド環境のクリア">
-    <delete dir="${dir.build}" />
-  </target>
+  <xmlproperty file="pom.xml" />
+
+  <!-- Path Definitions -->
+  <path id="project.class.path">
+    <fileset refid="maven-ant-tasks.dependency.fileset" />
+  </path>
 
   <!-- prepare -->
-  <target name="prepare" description="準備">
-    <mkdir dir="${dir.build}" />
-    <ivy:settings file="ivy-settings.xml" />
-    <ivy:convertpom pomFile="pom.xml" ivyFile="ivy.xml" />
-    <ivy:retrieve />
-  </target>
-
-  <!-- javac -->
-  <target name="compile" depends="prepare" description="コンパイル">
-    <javac debug="on" destdir="${dir.build}" encoding="${encoding}">
-      <classpath refid="project.class.path" />
-      <include name="**/*.java" />
-      <src path="src/main/java" />
-    </javac>
+  <target name="prepare" description="Preparing">
+    <artifact:pom file="pom.xml" id="maven.project" />
+    <artifact:dependencies fileSetId="maven-ant-tasks.dependency.fileset">
+      <pom refid="maven.project"/>
+    </artifact:dependencies>
   </target>
 
 </project>

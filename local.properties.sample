@@ -5,9 +5,15 @@
 #
 # ant properties for test.108
 #
-# @author	Naohide Sano
-# @version	0.00	050911	nsano	initial version
+# @author Naohide Sano
+# @version 0.00 050911 nsano initial version
 #
 
 #
-encoding=utf-8
+jvm=${env.JAVA_HOME}/bin/java
+javac.source=src/main/java
+javac.source.test=src/test/java
+javac.resource=src/main/resources
+javac.resource.test=src/test/resources
+javac.dest=target/classes
+javac.dest.test=target/test-classes
